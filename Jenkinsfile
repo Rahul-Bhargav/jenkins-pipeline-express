@@ -17,14 +17,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building dependencies...'
-                sh 'npm i'
+                sh 'sudo npm i'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'npm test'
+                sh 'sudo npm test'
             }
         }
     }
