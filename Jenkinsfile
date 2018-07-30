@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'node:alpine' 
-            args '-p 3000:3000' 
+            args '-p 3000:3000 -u 0:0' 
         }
     }
     stages {
@@ -17,14 +17,15 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building dependencies...'
-                sh 'sudo npm i'
+                sh 'echo whoami'
+                sh 'npm i'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'sudo npm test'
+                sh 'npm test'
             }
         }
     }
