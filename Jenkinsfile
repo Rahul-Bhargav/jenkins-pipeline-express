@@ -28,5 +28,11 @@ pipeline {
                 sh 'npm test'
             }
         }
+        stage('End') {
+            steps {
+                echo 'Node Testing...'
+                sh 'docker ps -a | grep node_build | awk -F \' \' \'{print $1}\' | xargs -n 1 docker rm -f'
+            }
+        }
     }
 }
