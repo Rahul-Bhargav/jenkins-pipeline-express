@@ -1,6 +1,6 @@
 const utils = require("../controllers/utils");
 
-// add
+// test add
 describe("add two numbers", () => {
   it("shoud be 1 + 1 = 2", () => {
     expect(utils.add(1, 1)).toBe(2);
