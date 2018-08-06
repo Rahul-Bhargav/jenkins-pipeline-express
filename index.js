@@ -12,7 +12,7 @@ app.get("/", function(req, res) {
 app.get("/add", function(req, res) {
   res.send(utils.add(envOne, envTwo));
 });
-
+// add divide
 app.get("/divide", function(req, res) {
   res.send(utils.divide(envOne, envTwo));
 });
