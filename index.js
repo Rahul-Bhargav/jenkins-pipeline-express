@@ -4,7 +4,7 @@ const app = express();
 
 const envOne = process.env.VARIABLE_1;
 const envTwo = process.env.VARIABLE_2;
-
+// node js server
 app.get("/", function(req, res) {
   res.send("Hello World!");
 });
