@@ -1,7 +1,7 @@
 {
   "name": "jenkins-pipeline-express",
   "version": "1.0.0",
-  "description": "Small express application to show TDD with Jenkins 2.0 pipelines",
+  "description": "Demo web application to show TDD with Jenkins 2.0 pipelines",
   "main": "index.js",
   "scripts": {
     "pm2-start": "pm2 start -f index.js --name 'jenkins-pipeline-express'",
