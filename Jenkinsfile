@@ -10,7 +10,8 @@ pipeline {
         stage('Checkout') {
             steps{
                 echo 'Getting source code...'
-                checkout scm                
+                checkout scm
+                sh 'whoami'
             }
         }
 
