@@ -1,3 +1,3 @@
 # Devops Pipeline Demo
 
-Jenkinsfile used to test PRs
+Jenkinsfile used to test all the PRs
