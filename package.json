@@ -1,7 +1,7 @@
 {
   "name": "jenkins-pipeline-express",
   "version": "1.0.0",
-  "description": "Demo web application to show TDD with Jenkins 2.0 pipelines",
+  "description": "Demo application to show TDD with Jenkins 2.0 pipelines",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
